@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAG Assistant</title>
+
+    <link rel="stylesheet" href="/frontend/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>RAG Assistant</h1>
+            <p>Ask questions from your uploaded documents</p>
+        </header>
+
+
+        <!-- Upload Section -->
+        <section class="card">
+
+            <h2>Upload Documents</h2>
+
+            <div class="upload-box">
+
+                <input
+                    type="file"
+                    id="pdfFiles"
+                    accept=".pdf"
+                    multiple
+                >
+
+                <label for="pdfFiles">
+                    📄 Choose PDF Files
+                </label>
+
+                <p>Select one or multiple PDF documents</p>
+
+            </div>
+
+            <div id="fileList"></div>
+
+            <button id="uploadBtn">
+                Upload Documents
+            </button>
+
+            <p id="uploadStatus"></p>
+
+        </section>
+
+
+        <!-- Question Section -->
+        <section class="card">
+
+            <h2>Ask a Question</h2>
+
+            <textarea
+                id="question"
+                placeholder="Ask something about your uploaded documents..."
+            ></textarea>
+
+            <button id="askBtn">
+                Ask Question
+            </button>
+
+        </section>
+
+
+        <!-- Answer Section -->
+        <section
+            class="card answer-card"
+            id="answerSection"
+        >
+
+            <h2>Answer</h2>
+
+            <div id="answer">
+                Your answer will appear here.
+            </div>
+
+            <h3>Sources</h3>
+
+            <div id="sources">
+                No sources yet.
+            </div>
+
+        </section>
+
+    </div>
+
+   <script src="/frontend/script.js"></script>
+
+</body>
+</html>
