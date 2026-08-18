@@ -42,6 +42,8 @@ LLM:
 Argentina won the FIFA World Cup in 2022.
 
 
+RAG system works
+
 User:
 Who won the FIFA World Cup in 2022?
 
