@@ -220,7 +220,7 @@ It is lightweight
 It provides REST APIs
 It supports file uploads
 It automatically provides Swagger/OpenAPI documentation
-It is suitable for AI backend services
+It is suitable for AI backend servic
 
 
 
